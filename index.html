@@ -2,11 +2,383 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumes | Team Members</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8; /* Set body background to white */
+            overflow-y: scroll; /* Enable scroll for the entire page */
+            color: #333;
+            min-height: 742vh;
+
+        }
+
+        .navbar {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 2px -2px gray;
+        }
+
+        .navbar a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            width: 850px;
+            margin: 80px auto; /* Adjust for navbar */
+            background-color: white; /* Ensure background remains white */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        .resume-container {
+            padding: 20px;
+            height: auto; /* Allow content to expand without scrolling */
+            overflow: visible; /* Disable scrolling inside the container */
+        }
+
+        .resume-section {
+            padding: 20px;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+        }
+
+        .resume-section h1 {
+            font-size: 2em;
+        }
+
+        .resume-section img {
+            max-width: 100px;
+            border-radius: 50%;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+       
+    </style>
 </head>
 <body>
-    
+
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="#bernard">Bernard's Resume</a>
+        <a href="#steven">Steven's Resume</a>
+        <a href="#renz">Renz's Resume</a>
+        <a href="#mervin">Mervin's Resume</a>
+        <a href="#paul">Paul's Resume</a>
+    </div>
+
+    <div class="resume-container">
+        <!-- Bernard's Resume -->
+        <div id="bernard" class="resume-section">
+            <div class="header">
+                <div class="profile">
+                    <h1>Bernard Mangulabnan</h1>
+                    <h2>Web Developer</h2>
+                    <p>Email: bernard.mangulabnan@example.com</p>
+                    <p>Phone: +44 123 456 789</p>
+                    <p>Address: 456 Developer Lane, Manila, Philippines</p>
+                </div>
+                <div class="photo">
+                    <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Bernard's Photo">
+                </div>
+            </div>
+            <div class="personal-info">
+                <div class="column">
+                    <h3>Personal Information</h3>
+                    <p>Date of Birth: January 20, 1992</p>
+                    <p>Gender: Male</p>
+                    <p>Nationality: Filipino</p>
+                    <p>Marital Status: Single</p>
+                    <p>Languages: English, Filipino</p>
+                </div>
+                <div class="column">
+                    <h3>Objective</h3>
+                    <p>
+                        A dedicated Web Developer with 4+ years of experience creating dynamic websites and applications. Skilled in HTML, CSS, JavaScript, and PHP. Looking to leverage my skills in a challenging and rewarding development role.
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Education Background</h3>
+                <ul>
+                    <li>
+                        <strong>Master’s Degree in Information Technology</strong> <br>
+                        University of the Philippines, 2014 - 2016
+                    </li>
+                    <li>
+                        <strong>Bachelor’s Degree in Computer Science</strong> <br>
+                        University of Santo Tomas, 2010 - 2014
+                    </li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Proficient in HTML, CSS, and JavaScript</li>
+                    <li>Experience with PHP and MySQL</li>
+                    <li>Version Control with Git and GitHub</li>
+                    <li>Responsive Web Design</li>
+                    <li>UI/UX Design</li>
+                </ul>
+            </div>
+            <div class="work-experience">
+                <h3>Work Experience</h3>
+                <ul>
+                    <li>
+                        <strong>Web Developer</strong> <br>
+                        Tech Solutions, Manila (2016 - Present) <br>
+                        Developed and maintained client websites and applications, ensuring responsive design and cross-browser compatibility.
+                    </li>
+                </ul>
+            </div>
+            <div class="certification">
+                <h3>Certifications</h3>
+                <ul>
+                    <li>Certified Web Developer - W3Schools</li>
+                    <li>Google Analytics Certified</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Steven's Resume -->
+        <div id="steven" class="resume-section">
+            <div class="header">
+                <div class="profile">
+                    <h1>Steven</h1>
+                    <h2>Software Engineer</h2>
+                    <p>Email: steven@example.com</p>
+                    <p>Phone: +44 987 654 321</p>
+                    <p>Address: 789 Engineer Street, London, UK</p>
+                </div>
+                <div class="photo">
+                    <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Steven's Photo">
+                </div>
+            </div>
+            <div class="personal-info">
+                <div class="column">
+                    <h3>Personal Information</h3>
+                    <p>Date of Birth: January 10, 1991</p>
+                    <p>Gender: Male</p>
+                    <p>Nationality: British</p>
+                    <p>Marital Status: Single</p>
+                    <p>Languages: English</p>
+                </div>
+                <div class="column">
+                    <h3>Objective</h3>
+                    <p>
+                        A passionate Software Engineer with expertise in full-stack development, eager to contribute to innovative tech projects.
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Education Background</h3>
+                <ul>
+                    <li>
+                        <strong>Bachelor’s Degree in Computer Science</strong> <br>
+                        University of London, 2010 - 2014
+                    </li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Proficient in JavaScript, Node.js, and Python</li>
+                    <li>Experience with MongoDB and MySQL</li>
+                    <li>Agile Development</li>
+                    <li>Strong Problem-Solving Abilities</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Renz's Resume -->
+        <div id="renz" class="resume-section">
+            <div class="header">
+                <div class="profile">
+                    <h1>Renz</h1>
+                    <h2>Data Analyst</h2>
+                    <p>Email: renz@example.com</p>
+                    <p>Phone: +44 333 444 555</p>
+                    <p>Address: 123 Data St, London, UK</p>
+                </div>
+                <div class="photo">
+                    <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Renz's Photo">
+                </div>
+            </div>
+            <div class="personal-info">
+                <div class="column">
+                    <h3>Personal Information</h3>
+                    <p>Date of Birth: February 5, 1993</p>
+                    <p>Gender: Male</p>
+                    <p>Nationality: British</p>
+                    <p>Marital Status: Single</p>
+                    <p>Languages: English</p>
+                </div>
+                <div class="column">
+                    <h3>Objective</h3>
+                    <p>
+                        A motivated Data Analyst with expertise in Python and SQL, looking for new opportunities to help businesses derive insights from data.
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Education Background</h3>
+                <ul>
+                    <li>
+                        <strong>Master’s Degree in Data Science</strong> <br>
+                        University of London, 2016 - 2018
+                    </li>
+                    <li>
+                        <strong>Bachelor’s Degree in Mathematics</strong> <br>
+                        University of Oxford, 2012 - 2016
+                    </li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Data Visualization with Power BI and Tableau</li>
+                    <li>Proficient in Python, R, SQL</li>
+                    <li>Strong Statistical Analysis Skills</li>
+                    <li>Machine Learning Algorithms</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Mervin's Resume -->
+        <div id="mervin" class="resume-section">
+            <div class="header">
+                <div class="profile">
+                    <h1>Mervin</h1>
+                    <h2>UI/UX Designer</h2>
+                    <p>Email: mervin@example.com</p>
+                    <p>Phone: +44 666 777 888</p>
+                    <p>Address: 432 Design Blvd, London, UK</p>
+                </div>
+                <div class="photo">
+                    <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Mervin's Photo">
+                </div>
+            </div>
+            <div class="personal-info">
+                <div class="column">
+                    <h3>Personal Information</h3>
+                    <p>Date of Birth: March 12, 1990</p>
+                    <p>Gender: Male</p>
+                    <p>Nationality: British</p>
+                    <p>Marital Status: Single</p>
+                    <p>Languages: English</p>
+                </div>
+                <div class="column">
+                    <h3>Objective</h3>
+                    <p>
+                        A creative UI/UX Designer with a passion for creating visually appealing and user-friendly interfaces. Seeking to help teams create seamless digital experiences.
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Education Background</h3>
+                <ul>
+                    <li>
+                        <strong>Bachelor’s Degree in Graphic Design</strong> <br>
+                        University of London, 2010 - 2014
+                    </li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Adobe Creative Suite</li>
+                    <li>Wireframing & Prototyping</li>
+                    <li>User Research & Testing</li>
+                    <li>Responsive Web Design</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Paul's Resume -->
+        <div id="paul" class="resume-section">
+            <div class="header">
+                <div class="profile">
+                    <h1>Paul</h1>
+                    <h2>DevOps Engineer</h2>
+                    <p>Email: paul@example.com</p>
+                    <p>Phone: +44 999 000 111</p>
+                    <p>Address: 123 Cloud St, London, UK</p>
+                </div>
+                <div class="photo">
+                    <img src="https://randomuser.me/api/portraits/men/6.jpg" alt="Paul's Photo">
+                </div>
+            </div>
+            <div class="personal-info">
+                <div class="column">
+                    <h3>Personal Information</h3>
+                    <p>Date of Birth: April 2, 1988</p>
+                    <p>Gender: Male</p>
+                    <p>Nationality: British</p>
+                    <p>Marital Status: Single</p>
+                    <p>Languages: English</p>
+                </div>
+                <div class="column">
+                    <h3>Objective</h3>
+                    <p>
+                        A skilled DevOps Engineer with expertise in cloud computing and automation tools, aiming to optimize deployment pipelines and enhance system efficiency.
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <h3>Education Background</h3>
+                <ul>
+                    <li>
+                        <strong>Master’s Degree in Computer Engineering</strong> <br>
+                        University of London, 2014 - 2016
+                    </li>
+                    <li>
+                        <strong>Bachelor’s Degree in Information Systems</strong> <br>
+                        University of Birmingham, 2010 - 2014
+                    </li>
+                </ul>
+            </div>
+            <div class="skills">
+                <h3>Skills</h3>
+                <ul>
+                    <li>Cloud Technologies (AWS, Azure, Google Cloud)</li>
+                    <li>CI/CD Pipeline Automation</li>
+                    <li>Docker & Kubernetes</li>
+                    <li>Scripting (Bash, Python)</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>All resume aree created with our personal information included.</p>
+    </div>
+
 </body>
 </html>
